@@ -1,7 +1,8 @@
 ﻿
 using Object_Sample;
 
-var musuko = new Musuko(new Tsumma(50));
+//var musuko = new Musuko(new Tsumma(50));
+var musuko = new Musuko(Factories.Create(Factories.PlayKind.Tsumma, 50));
 
 while (musuko.HeroRed.Play())
 {
